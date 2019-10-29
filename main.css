@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "segoe ui light";
+}
+
+.navbar {
+    height: 35px;
+    background-color: rgba(146, 144, 144, 0.6);
+    text-align: right;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white
+}
+
+.navbar ul li {
+    margin-top: 3px;
+    display: inline-block;
+    padding: 3px 5px;
+    margin-left: 10px;
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.main {
+    text-align: center;
+    width: 100%;
+    height: 650px;
+    background-image: url(images/shutterstock_277750193.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.main h1,
+p {
+    color: white;
+}
+
+.main p {
+    font-size: 230%;
+    font-family: 'Dancing Script', cursive
+}
+
+.btns {
+    padding: 15px 28px;
+    border: 0px;
+}
+
+.btn1 {
+    background-color: #c1ab84;
+}
+
+.btn2 {
+    background-color: #fff;
+}
+
+.items {
+    text-align: center;
+    overflow: hidden;
+}
+
+.item1 {
+    padding-top: 30px;
+    width: 23%;
+    float: left;
+}
+
+.item1 p {
+    color: #868686;
+    padding: 20px
+}
+
+.item1 img {
+    border-radius: 50%;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.line {
+    height: 2px;
+    width: 80px;
+    background-color: grey;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.clr {
+    clear: both;
+}
+
+.container {
+    width: 90%;
+    padding: 20px 0px;
+    margin: auto;
+}
+
+.member {
+    border: 4px solid white;
+    padding: 10px;
+    text-align: center;
+    width: 24%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.member img {
+    transition: all 1s;
+    transition-delay: 1s;
+    width: 100%
+}
+
+.member:hover .caption {
+    opacity: 1;
+    transform: rotate(360deg);
+}
+
+.member:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+.caption {
+    transition: all 1s;
+    background-color: rgb(42, 63, 85, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.caption h2 {
+    background-color: #2A3F55;
+    padding: 10px;
+    position: relative;
+    left: 120%;
+    transition: all 1s;
+    transition-delay: 2s
+}
+
+.mainSlide {
+    height: 500px;
+    width: 75%;
+    margin: 50px auto;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-size: 100% 100%;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url(images/bg.jpg)
+    }
+    30% {
+        background-image: url(images/bg2.jpg)
+    }
+    80% {
+        background-image: url(images/bg3.jpg)
+    }
+    100% {
+        background-image: url(images/bg4.jpg)
+    }
+}
+
+.member:hover .caption h2 {
+    left: 0%;
+}
+
+.member:hover .caption p {
+    left: 0%;
+}
+
+.caption p {
+    padding: 20px;
+    font-size: 18px;
+    position: relative;
+    left: 120%;
+    transition: all 1s;
+    transition-delay: 2.5s
+}
+
+.about {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.chief {
+    width: 40%;
+    float: left;
+}
+
+.chief img {
+    width: 100%;
+}
+
+.history {
+    width: 60%;
+    float: left;
+    text-align: center;
+    padding: 198px 0px;
+    background-color: #fff;
+}
+
+.history span {
+    color: #f2ce08;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Dancing Script", cursive;
+}
+
+.history p {
+    color: #868686;
+    padding: 40px;
+    font-size: 18px;
+}
+
+.history button {
+    border: 2px solid #231f20;
+    padding: 15px 20px;
+    background-color: transparent;
+}
+
+.photos {
+    height: 300px;
+    background-image: url(images/bgs.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
